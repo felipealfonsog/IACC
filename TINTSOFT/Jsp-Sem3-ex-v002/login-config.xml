@@ -1,0 +1,22 @@
+<!--#simpleWeb_config -->
+<application-policy
+name="simpleWebAuthenticationPolicy">
+<authentication>
+<login-module
+code="org.jboss.security.auth.spi.DatabaseServerLoginModule"
+flag="required">
+<module-option
+name="dsJndiName">java:/simpleDS</module-option>
+<module-option name="principalsQuery">select password
+from User where login=?</module-option>
+<module-option name="rolesQuery">select r.name, 'Roles'
+from User u, Role r where u.roleId=r.id and
+login=?</module-option>
+<module-option
+name="hashAlgorithm">MD5</module-option>
+<module-option
+name="hashEncoding">base64</module-option>
+</login-module>
+</authentication>
+</application-policy>
+
