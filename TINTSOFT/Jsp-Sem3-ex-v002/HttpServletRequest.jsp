@@ -12,8 +12,9 @@ charset=ISO-8859-1">
 <body>
 <h1>Home de SimpleWeb</h1>
 <p>Usuario: <%=request.getUserPrincipal().getName()%></p>
-<% if ( request.isUserInRole("ADMINISTRATOR"))
-{
+<% 
+if ( request.isUserInRole("ADMINISTRATOR"))
+                {
 %>
 <p>Acceso a administración</p>
 <% } %>
