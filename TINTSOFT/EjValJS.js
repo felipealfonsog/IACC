@@ -1,4 +1,6 @@
 // Validación RUT JavaScript
+// developed by Felipe Alfonso GOnzalez
+// f.alfonso@res-ear.ch 
 
 function Valida_Rut(Objeto) {
     var tmpstr = "";

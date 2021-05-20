@@ -1,3 +1,7 @@
+//
+// developed by Felipe Alfonso GOnzalez
+// f.alfonso@res-ear.ch 
+// 
 public Vector<JsonJTableExpenseBean> obtenerUsuarios(String entidad, String order){
                 Connection cnn = null;
                 CallableStatement cs = null;
