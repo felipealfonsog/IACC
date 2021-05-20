@@ -18,9 +18,9 @@ charset=ISO-8859-1">
 // pagina de entrada 
 // developed by Felipe Alfonso GOnzalez
 // f.alfonso@res-ear.ch 
-if ( request.isUserInRole("ADMINISTRATOR"))
-                {
-%>
+        if ( request.isUserInRole("ADMINISTRATOR"))
+                        {
+        %>
 <p>Acceso a administración</p>
 <% } %>
 </body>
